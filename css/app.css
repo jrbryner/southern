@@ -73,7 +73,7 @@ ng-map {
   left: 0;
   width: 100%;
   min-height: 820px;
-  padding:40px;
+  padding: 16px 0 20px 50px;
   box-sizing: border-box;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
 }
@@ -99,6 +99,7 @@ ng-map {
     font-family: Sorts Mill Goudy;
     color: #a99340 !important;
     font-style: italic;
+    pointer-events: none;
 }
 .menu_content {
     margin-bottom: 20px;
@@ -673,7 +674,7 @@ ng-map {
   #header2 img {
     max-height: 93px;
   }
-  #first .text { font-size: 38px !important; }
+  #first .text { font-size: 52px !important; }
   #second .overflow {
     width: 70%;
     margin: 0 auto 15px;
