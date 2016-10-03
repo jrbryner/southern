@@ -1,0 +1,8 @@
+<div id="fourth">
+  <div class="row column small-up-1 medium-up-4">
+    <div ng-repeat="i in [1,2,3,4]" class="hidden column section" ng-class="{border : !$last}" when-visible="app.showElementUp">
+      <div class="top">{{app.fourthTopText[$index]}}</div>
+      <div class="bottom">{{app.fourthBottomText[$index]}}</div>
+    </div>
+  </div>
+</div>

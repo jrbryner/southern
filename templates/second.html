@@ -1,0 +1,17 @@
+<div id="second">
+  <div class="lineContainer row column vertical everything">
+    <div class="line"></div>
+    <div class="content">
+      <button class="request">REQUEST INFORMATION</button>
+      <button class="visit">VISIT CAMPUS</button>
+    </div>
+  </div>
+  <div class="row small-up-1 medium-up-3">
+    <div ng-repeat="i in app.secondSection" class="column hidden" when-visible="app.showElementUp">
+      <div class="overflow">
+        <img ng-src="{{app.baseImgFolder}}{{app.secondSection[$index]}}"/>
+        <div class="text vertical">{{app.secondSectionText[$index]}}</div>
+      </div>
+    </div>
+  </div>
+</div>

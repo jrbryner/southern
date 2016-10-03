@@ -1,0 +1,248 @@
+<div id="header">
+  <div class="container vertical">
+    <ul class="list">
+      <li ng-repeat="i in app.headerText">{{i}}</li>
+    </ul>
+  </div>
+</div>
+
+<div id="header2" class="vertical">
+  <img src="img/logo.png"/>
+  <div class="container vertical">
+    <div class="smallContainer hide-for-small-only">
+      <input type="text" placeholder="Search"/>
+      <ul class="navMenu">
+        <li>APPLY</li>
+        <li>VISIT</li>
+        <li>DEGREES</li>
+        <li class="menu" ng-click="toggleMenu();" ng-if="!isMenuOpen">MENU</li>
+        <li class="menu" ng-click="toggleMenu();" ng-if="isMenuOpen">CLOSE MENU</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- menu -->
+
+<div id="menu" ng-if="isMenuOpen" ng-init="isOpen = -1">
+
+  <div class="menu_container">
+    <div class="menu_clickable" ng-click="isOpen = 0;" ng-class="{ active : isOpen == 0 }">ACADEMICS</div>
+    <div class="menu_content" ng-if="isOpen == 0">
+      <div class="row column" style="margin: 0;max-width: none;">
+        <div class="column small-12 medium-3">
+
+          <div class="label">Degrees</div>
+          <a href="#">Undergraduate Degrees</a>
+          <a class="subtext" href="#">Just out of high school?</a>
+          <a href="#">Graduate Degrees</a>
+          <a class="subtext" href="#">Already have your bachelor's degree?</a>
+          <a href="#">Catalog</a>
+          <a href="#">Course Schedule</a>
+
+          <div class="label">Learning Programs</div>
+          <a href="#">Online Campus</a>
+          <a href="#">Southern Scholars</a>
+          <a href="#">Study Abroad</a>
+
+        </div>
+        <div class="column small-12 medium-3">
+          <div class="label">Schools and Departments</div>
+          <a href="#">Allied Health</a>
+          <a href="#">Biology</a>
+          <a href="#">Business</a>
+          <a href="#">Chemistry</a>
+          <a href="#">Computing</a>
+          <a href="#">Education and Pyschology</a>
+          <a href="#">English</a>
+          <a href="#">History and Political Studies</a>
+          <a href="#">Journalism and Communication</a>
+          <a href="#">Mathematics</a>
+        </div>
+        <div class="column small-12 medium-3">
+          <div class="label" style="margin-top:60px;"></div>
+          <a href="#">Modern Languages</a>
+          <a href="#">Music</a>
+          <a href="#">Nursing</a>
+          <a href="#">P.E., Health and Wellness</a>
+          <a href="#">Physics and Engineering</a>
+          <a href="#">Religion</a>
+          <a href="#">Social Work</a>
+          <a href="#">Technology</a>
+          <a href="#">Visual Art and Design</a>
+        </div>
+        <div class="column small-12 medium-3">
+          <div class="label">Resources</div>
+          <a href="#">Deciding Your Major</a>
+          <a href="#">Records and Advisement</a>
+          <a href="#">Disability Support</a>
+          <a href="#">Learning Support</a>
+          <a href="#">McKee Library</a>
+          <a href="#">Academic Administration</a>
+
+          <div class="label">Registration</div>
+          <a href="#">Register for Classes</a>
+          <a href="#">Registration Eligibility</a>
+          <a href="#">Degree Audit</a>
+          <a href="#">Book List</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu_container">
+    <div class="menu_clickable" ng-click="isOpen = 1;" ng-class="{ active : isOpen == 1 }">ADMISSIONS</div>
+    <div class="menu_content" ng-if="isOpen == 1">
+      <div class="row column" style="margin: 0;max-width: none;">
+        <div class="column small-12 medium-4">
+          <div class="label">Undergraduate</div>
+          <a href="#">Admission Requirements</a>
+          <a href="#">Apply Now</a>
+          <a href="#">Tuition and Expenses</a>
+          <a href="#">Visit Us</a>
+          <a href="#">Degrees and Programs</a>
+        </div>
+
+        <div class="column small-12 medium-4">
+          <div class="label">Graduate</div>
+          <a href="#">Admission Requirements</a>
+          <a href="#">Apply Now</a>
+          <a href="#">Tuition and Expenses</a>
+          <a href="#">Visit Us</a>
+          <a href="#">Degrees and Programs</a>
+        </div>
+
+        <div class="column small-12 medium-4">
+          <div class="label">Finances and Scholarships</div>
+          <a href="#">Applying for Financial Aid</a>
+          <a href="#">Scholarships and Grants</a>
+          <a href="#">Student Loans</a>
+          <a href="#">Financial Aid Forms</a>
+          <a href="#">Contact Student Finance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu_container">
+    <div class="menu_clickable" ng-click="isOpen = 2;" ng-class="{ active : isOpen == 2 }">CAMPUS LIFE</div>
+    <div class="menu_content" ng-if="isOpen == 2">
+      <div class="row column" style="margin: 0;max-width: none;">
+        <div class="column small-12 medium-3">
+          <div class="label">Living on Campus</div>
+          <a href="#">Talge Hall</a>
+          <a href="#">Thatcher Hall</a>
+          <a href="#">Other Housing</a>
+          <a href="#">Food Services</a>
+        </div>
+
+        <div class="column small-12 medium-3">
+          <div class="label">Worshipping on Campus</div>
+          <a href="#">Chaplain's Office</a>
+          <a href="#">LifeGroups</a>
+          <a href="#">Area Churches</a>
+          <a href="#">Watch Worship Services</a>
+        </div>
+
+        <div class="column small-12 medium-3">
+          <div class="label">Growing on Campus</div>
+          <a href="#">Student Groups</a>
+          <a href="#">Intramurals</a>
+          <a href="#">Performing Groups</a>
+          <a href="#">Area Recreation</a>
+        </div>
+
+        <div class="column small-12 medium-3">
+          <div class="label">More about Campus</div>
+          <a href="#">Event Calendar</a>
+          <a href="#">Virtual Tour</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu_container">
+    <div class="menu_clickable" ng-click="isOpen = 3;" ng-class="{ active : isOpen == 3 }">ABOUT SOUTHERN</div>
+    <div class="menu_content" ng-if="isOpen == 3">
+      <div class="row column" style="margin: 0;max-width: none;">
+        <div class="column small-12 medium-4">
+          <div class="label">History and Mission</div>
+          <a href="#">Mission Statement</a>
+          <a href="#">History</a>
+          <a href="#">Accreditation</a>
+          <a href="#">Spiritual Life</a>
+          <a href="#">Quick Facts</a>
+          <a href="#">Missions</a>
+          <a href="#">Strategic Plan</a>
+        </div>
+
+        <div class="column small-12 medium-4">
+          <div class="label">Administration</div>
+          <a href="#">President's Office</a>
+          <a href="#">President's Cabinet</a>
+          <a href="#">Academic Administration</a>
+
+          <div class="label">Visiting Southern</div>
+          <a href="#">Travel Directions</a>
+          <a href="#">Lodging</a>
+        </div>
+
+        <div class="column small-12 medium-4">
+          <div class="label">Southern Affiliates</div>
+          <a href="#">Evangelistic Resource Center</a>
+          <a href="#">Lynn H. Wood Archaeological Museum</a>
+          <a href="#">Teaching Materials Center</a>
+          <a href="#">Hulsey Wellness Center</a>
+          <a href="#">SVAD Productions</a>
+          <a href="#">Center for Innovation and Research in Computing</a>
+          <a href="#">Village Market</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu_container">
+    <div class="menu_clickable" ng-click="isOpen = 4;" ng-class="{ active : isOpen == 4 }">GIVE NOW</div>
+    <div class="menu_content" ng-if="isOpen == 4">
+      <div class="row column" style="margin: 0;max-width: none;">
+        <div class="column small-12 medium-4">
+          <div class="label">Giving Financially</div>
+          <a href="#">Donate Online</a>
+          <a href="#">Southern Annual Fund</a>
+          <a href="#">Scholarships and Endowments</a>
+          <a href="#">Future Gifts</a>
+          <a href="#">Legacy Society</a>
+          <a href="#">President's Circle of 100</a>
+        </div>
+
+        <div class="column small-12 medium-4">
+          <div class="label">Giving Your Time</div>
+          <a href="#">Become a Lights Volunteer</a>
+          <a href="#">Community Service Day</a>
+          <a href="#">We-Haul</a>
+        </div>
+
+        <div class="column small-12 medium-4">
+          <div class="label">Learn More</div>
+          <a href="#">Scholarship Stories</a>
+          <a href="#">Corporation and Foundation Partnerships</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- on scroll -->
+
+<div id="small_header" scroll-position="scroll" ng-class="{scrolling : scroll >= 183}" class="vertical">
+  <img src="img/small_logo.png"/>
+  <div class="right vertical">
+    <div class="left_options hide-for-small-only">
+      <span>APPLY</span>
+      <span>VISIT</span>
+      <span>DEGREES</span>
+    </div>
+
+    <span class="hide-for-small-only">MAIN</span> MENU<i class="menu fa fa-bars" aria-hidden="true"></i>
+  </div>
+</div>

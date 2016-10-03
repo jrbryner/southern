@@ -1,0 +1,21 @@
+<div id="eighth" class="relative">
+  <!--<div class="diamond"></div>-->
+  <div class="column row">
+    <div class="column small-11 small-centered">
+      <div class="text">UPCOMING EVENTS</div>
+      <div class="row small-up-1 medium-up-3">
+        <div ng-repeat="i in events" class="column relative hidden" when-visible="app.showElementUp">
+          <a target="_blank" class="absolute" ng-href="http://www.southern.edu/calendar?id={{i.EventID}}"></a>
+          <div class="left">
+            <div class="dayOfWeek">{{i.DayOfWeek}}</div>
+            <div class="date">{{i.MonthShort}} {{i.Day}}</div>
+          </div>
+          <div class="right">
+            <div class="title">{{i.Title}}</div>
+            <div class="time">{{i.StartTime}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
