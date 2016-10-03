@@ -6,7 +6,7 @@
     <div class="column learnHolder" ng-repeat="i in app.seventhSection">
       <div class="hidden container" when-visible="app.showElement">
         <img ng-attr-src="{{app.baseImgFolder}}{{i}}"/>
-        <div class="expand" ng-if="app.seventhText[$index] != ''" style="background : {{app.seventhTextBG[$index]}}">{{app.seventhText[$index]}}</div>
+        <div class="expand vertical" ng-if="app.seventhText[$index] != ''" style="background : {{app.seventhTextBG[$index]}}">{{app.seventhText[$index]}}</div>
       </div>
     </div>
   </div>

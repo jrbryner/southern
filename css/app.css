@@ -18,6 +18,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.row {
+  max-width: 90rem !important;
+}
 
 .overflow:hover > img {
   transform: scale(1.3);
@@ -457,8 +460,6 @@ ng-map {
   font-weight: bold;
   margin-top: 50px;
   cursor: pointer;
-  border-bottom: 6px double rgb(206, 213, 74);
-  padding-bottom: 10px;
   display: inline-block;
 }
 #sixth .major {
@@ -476,9 +477,36 @@ ng-map {
   z-index: 1;
   margin-top: 8%;
 }
+#sixth .small span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ced54a;
+  transform: rotate(45deg);
+  margin-left: 20px;
+  position: relative;
+  top: 0px;
+}
+#sixth .small span::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  position: relative;
+  top: 0px;
+  left: 4px;
+  border-top: 6px solid #ced54a;
+  border-right: 6px solid #ced54a;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
 
 #seventh {
   margin-bottom: 70px;
+}
+#seventh img {
+  max-width: none;
+  width: 100%;
 }
 #seventh .container {
   margin-bottom: 20px;
@@ -519,14 +547,19 @@ ng-map {
   left: 0;
   right: 0;
   text-align: center;
-  padding-bottom: 5%;
-  height: 12.5%;
+  height: 16.5%;
   transition: .2s all ease-in-out;
   cursor: pointer;
 }
 #seventh .container:hover > .expand {
   height: 100%;
   padding-top: 20px;
+}
+#seventh .container:hover > .expand::before {
+  height: 0%;
+}
+#seventh .expand::before {
+  transition: .2s all ease-in-out;
 }
 #eighth {
   padding: 0 0 160px;
