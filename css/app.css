@@ -186,7 +186,7 @@ ng-map {
   font-weight: 500;
   cursor: pointer;
 }
-#small_header .right span {
+#small_header .right a {
   cursor: pointer;
 }
 #small_header .left_options {
@@ -194,7 +194,7 @@ ng-map {
     margin-right: 60px;
     color: #cdd449;
 }
-#small_header .left_options span {
+#small_header .left_options a {
     margin-right: 21px;
 }
 
