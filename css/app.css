@@ -453,9 +453,13 @@ ng-map {
   width: 100%;
 }
 #sixth .small {
-    color: #ced54a;
-    font-weight: bold;
-    margin: 50px 0 0 55px;
+  color: #ced54a;
+  font-weight: bold;
+  margin-top: 50px;
+  cursor: pointer;
+  border-bottom: 6px double rgb(206, 213, 74);
+  padding-bottom: 10px;
+  display: inline-block;
 }
 #sixth .major {
   color: #ced54a;
