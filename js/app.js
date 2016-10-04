@@ -100,7 +100,8 @@ a.component('sixthSection', {
   templateUrl: 'templates/sixth.html',
   controller: function sixthSectionController($scope, app){
     $scope.app = app;
-    $scope.mapOpen = !1;
+    $scope.missionLocations = missionLocations.Locations;
+    this.mapOpen = !1;
   }
 });
 
