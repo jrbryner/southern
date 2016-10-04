@@ -4,7 +4,7 @@
       <div class="column rotate">
         <img class="hidden" ng-repeat="i in app.sixthSection" when-visible="app.showElementFlip" ng-attr-src="{{app.baseImgFolder}}{{i}}"/>
       </div>
-      <div class="column container">
+      <div class="column container medium-pull-1">
         <div class="text">CHANGE THE <span class="major">WORLD</span></div>
         <div class="words">
           Few phrases carry such weight. For some of you, “change the world” sounds daunting; others were born to challenge the status quo. For Southern students, those three words represent a promise: combine your passion with God’s purpose, and you can’t help but change the world!
@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <ng-map ng-class="{open : $ctrl.mapOpen}" center="[35.0479493, -85.052825]" zoom="4" height="100%" width="100%">
+  <ng-map ng-class="{open : $ctrl.mapOpen}" scrollwheel="false" center="[34.676297, 18.301090]" zoom="2" height="100%" width="100%">
     <div class="close" ng-click="$ctrl.mapOpen = !1">Close Map</div>
     <marker ng-repeat="place in missionLocations" position="[{{place.Lat}}, {{place.Long}}]"></marker>
   </ng-map>

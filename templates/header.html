@@ -1,7 +1,7 @@
 <div id="header">
   <div class="container vertical">
     <ul class="list">
-      <li ng-repeat="i in app.headerText">{{i}}</li>
+      <li ng-repeat="i in app.headerText"><i class="fa fa-user" ng-if="$last" aria-hidden="true"></i>{{i}}</li>
     </ul>
   </div>
 </div>
@@ -28,7 +28,7 @@
 
 <!-- menu -->
 
-<div id="menu" ng-if="isMenuOpen" ng-init="isOpen = -1" scroll-position="scroll" ng-class="{scrolling : scroll >= 183}">
+<div id="menu"  ng-class="{ activeMenu : isOpen != -1}" ng-if="isMenuOpen" ng-init="isOpen = -1" scroll-position="scroll" ng-class="{scrolling : scroll >= 183}">
 
   <div class="menu_container">
     <div class="menu_clickable" ng-click="isOpen = 0;" ng-class="{ active : isOpen == 0 }">ACADEMICS</div>
@@ -247,6 +247,6 @@
       <a href="http://www.southern.edu/degrees">DEGREES</a>
     </div>
 
-    <span ng-click="toggleMenu();" style="cursor: pointer;"><span class="hide-for-small-only">MAIN</span> MENU<i class="menu fa fa-bars" aria-hidden="true"></i></span>
+    <span ng-click="toggleMenu();" style="cursor: pointer;"><span class="hide-for-small-only">MAIN</span> MENU<i ng-if="!isMenuOpen" class="menu fa fa-bars" aria-hidden="true"></i><i ng-if="isMenuOpen" class="menu fa fa-times" style="font-size: 23px;" aria-hidden="true"></i></span>
   </div>
 </div>

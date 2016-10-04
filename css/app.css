@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Open Sans;
 }
 
 .hidden { visibility: hidden; }
@@ -68,6 +69,11 @@ a.absolute {
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
+  font-family: Open Sans;
+  text-transform: uppercase;
+}
+#header .list i {
+  margin-right: 5px;
 }
 #menu {
   background: rgba(111, 44, 62, 0.95);
@@ -79,13 +85,15 @@ a.absolute {
   padding: 16px 0 20px 50px;
   box-sizing: border-box;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
-  top: 184px;
+  top: 183px;
 }
 .menu_clickable {
   color: #FADA63;
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 200;
   cursor: pointer;
+  font-family: Neue Helvetica;
+  transition: .1s all ease-out;
 }
 .menu_clickable.active {
     color: #FFF !important;
@@ -114,16 +122,17 @@ a.absolute {
 .menu_content {
     margin-bottom: 20px;
 }
+#menu.activeMenu .menu_clickable {
+  font-size: 48px;
+}
 
 #header2 {
   height: 143px;
   background: #184f2c;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.62);
   padding: 0 40px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  margin-bottom: 1px;
 }
 #header2 img {
     height: 93px;
@@ -135,7 +144,10 @@ a.absolute {
 #header2 .smallContainer {
   display: inline-block;
   vertical-align: middle;
-  color: #ced54a;
+  color: #fada63;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 21px;
 }
 #header2 .navMenu {
   list-style: none;
@@ -182,9 +194,8 @@ a.absolute {
   height: 84px;
   width: 100%;
   background: #184f2c;
-  z-index: 99999;
+  z-index: 9999999999;
   padding: 0 20px;
-  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.43);
 }
 #small_header .menu {
   margin-left: 10px;
@@ -203,12 +214,18 @@ a.absolute {
   cursor: pointer;
 }
 #small_header .left_options {
-    display: inline-block;
-    margin-right: 60px;
-    color: #cdd449;
+  display: inline-block;
+  margin-right: 60px;
+  color: #fada63;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 19px;
 }
 #small_header .left_options a {
     margin-right: 21px;
+}
+#small_header img {
+    margin-top: -9px;
 }
 
 #first {
@@ -237,17 +254,18 @@ a.absolute {
 }
 
 #second {
-  margin: 0 auto 25px;
+  margin: 28px auto 25px;
 }
 #second .lineContainer {
-  height: 100px;
+  height: 60px;
   position: relative;
   text-align: center;
+  margin-bottom: 28px;
 }
 #second .line {
   border-top: 1px solid rgba(24, 79, 44, 0.23);
   position: absolute;
-  top: 49px;
+  top: 31px;
   left: 0;
   right: 0;
 }
@@ -258,11 +276,12 @@ a.absolute {
 }
 #second .content button {
     border: 1px solid #184f2c;
-    padding: 12px 25px;
+    padding: 17px 50px;
 }
 #second .request {
   background: #184f2c;
   color: #fff;
+  margin-right: 12px;
 }
 #second .visit {
   color: #184f2c;
@@ -273,18 +292,25 @@ a.absolute {
   text-align: center;
 }
 #second .text {
-  position: absolute;
   top: 50%;
   left: 50%;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 18px;
+  color: #fff;
+  font-size: 24px;
   font-family: Neue Helvetica Condensed;
-  font-weight: 500;
+  font-weight: 400;
   border: 1px solid #fff;
   display: inline-block;
-  width: 142px;
-  margin: -20px 0 0 -71px;
   height: 40px;
+  padding: 0 25px 13px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  line-height: 40px;
+}
+#second .lineContainer button {
+  border-radius: 0px;
+  font-family: Neue Helvetica Condensed;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 #third {
@@ -301,7 +327,7 @@ a.absolute {
 #third .verse {
   font-weight: bold;
   color: #333;
-  font-family: Open Sans;
+  font-family: Neue Helvetica Condensed;
 }
 
 #fourth {
@@ -375,12 +401,13 @@ a.absolute {
   position: relative;
 }
 #fifth .leftContainer .undergrad, #fifth .leftContainer .grad {
-  padding: 13px 40px;
+  padding: 13px 40px 13px 0;
   font-size: 25px;
   font-family: Neue Helvetica Condensed;
   font-weight: 300;
   margin-bottom: 17px;
   cursor: pointer;
+  margin-left:; -3000px;
 }
 #fifth .leftContainer span {
   display: inline-block;
@@ -410,7 +437,7 @@ a.absolute {
 }
 #fifth .text {
   background: #fff;
-  font-size: 54px;
+  font-size: 65px;
   display: inline-block;
   line-height: 1.3;
   padding: 0 12px;
@@ -430,7 +457,6 @@ a.absolute {
   display: inline-block;
   font-size: 20px;
   padding: 20px;
-  width: 90%;
 }
 #fifth .arrowDown::after {
   content: '';
@@ -462,7 +488,7 @@ a.absolute {
 #sixth .rotate {
   transform: rotate(-45deg);
   position: relative;
-  left: 15%;
+  left: 5%;
   z-index: 0;
 }
 #sixth .text {
@@ -480,7 +506,8 @@ a.absolute {
   font-weight: bold;
   margin-top: 50px;
   cursor: pointer;
-  display: inline-block;
+  display: block;
+  text-align: right;
 }
 #sixth .major {
   color: #ced54a;
@@ -514,7 +541,7 @@ a.absolute {
   height: 8px;
   position: relative;
   top: 0px;
-  left: 4px;
+  left: -6px;
   border-top: 6px solid #ced54a;
   border-right: 6px solid #ced54a;
   border-left: 6px solid transparent;
@@ -683,7 +710,7 @@ sixth-section ng-map.open {
   font-style: italic;
 }
 #ninth .desc {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
   line-height: 1.8;
   font-weight: 100;
@@ -697,7 +724,7 @@ sixth-section ng-map.open {
   padding: 18px 0;
   border: 1px solid rgb(190,190,188);
   line-height: 1.3;
-  font-family: Open Sans;
+  font-family: Neue Helvetica Condensed;
   margin-top: 20px;
   cursor: pointer;
 }

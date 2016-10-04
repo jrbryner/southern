@@ -6,7 +6,7 @@ a.factory('app', function(){
 
     baseImgFolder     : 'img/',
 
-    headerText        : ['Current Students', 'Faculty & Staff', 'Alumni & Friends', 'Parents and Families', 'MyAccess'],
+    headerText        : ['Future Students', 'Parents & Families', 'Alumni & Friends', 'Faculty & Staff', 'Curent Students', 'MyAccess'],
     headerLink        : [],
 
     firstSection      : ['img0-0.png'],
