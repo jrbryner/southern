@@ -390,6 +390,7 @@ a.absolute {
   background-size: cover !important;
   padding: 150px 0 500px;
   background-position-x: 60% !important;
+  background-position-y: 50% !important;
 }
 #fifth .content {
   padding: 0;
@@ -456,6 +457,7 @@ a.absolute {
 #fifth .major {
   color: #ced54a;
   font-weight: 500;
+  white-space: nowrap;
 }
 #fifth .desc {
   font-family: Sorts Mill Goudy;
@@ -514,6 +516,7 @@ a.absolute {
   cursor: pointer;
   display: block;
   text-align: right;
+  white-space: nowrap;
 }
 #sixth .major {
   color: #ced54a;
