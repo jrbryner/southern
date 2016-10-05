@@ -748,6 +748,14 @@ sixth-section ng-map.open {
   left: 9%;
   transform: rotate(45deg);
 }
+#ninth .column {
+    display: inline-block;
+    float: none !important;
+    vertical-align: middle;
+}
+#ninth .row {
+  height: 301px;
+}
 
 #footer {
   background: #184f2c;
@@ -821,6 +829,9 @@ sixth-section ng-map.open {
     width: 50%;
     margin: 0 auto;
     display: block;
+  }
+  #ninth .row {
+    height: auto !important;
   }
   #ninth .container {
     margin: 40px 0 0;
