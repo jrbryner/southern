@@ -243,7 +243,8 @@ a.absolute {
 }
 #first .text {
   background: #fff;
-  font-size: 78px;
+  font-size: 90px;
+  font-size: 9vh;
   display: inline-block;
   line-height: 1.3;
   padding: 0 20px;
@@ -328,12 +329,13 @@ a.absolute {
   color: #225736;
   font-family: Neue Helvetica Condensed;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 30px;
 }
 #third .verse {
   font-weight: bold;
   color: #333;
   font-family: Neue Helvetica Condensed;
+  font-size: 24px;
 }
 
 #fourth {
