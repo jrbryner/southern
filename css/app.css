@@ -96,7 +96,7 @@ a.absolute {
   transition: .1s all ease-out;
 }
 .menu_clickable.active {
-    color: #FFF !important;
+  color: #FFF !important;
 }
 .label {
   color: #fff;
@@ -104,8 +104,8 @@ a.absolute {
   margin-top: 30px;
 }
 #menu a {
-    display: block;
-    color: #FADA63;
+  display: block;
+  color: #FADA63;
 }
 #menu.scrolling {
   top: 84px;
@@ -114,13 +114,13 @@ a.absolute {
   max-height: calc(100vh - 84px);
 }
 .subtext {
-    font-family: Sorts Mill Goudy;
-    color: #a99340 !important;
-    font-style: italic;
-    pointer-events: none;
+  font-family: Sorts Mill Goudy;
+  color: #a99340 !important;
+  font-style: italic;
+  pointer-events: none;
 }
 .menu_content {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 #menu.activeMenu .menu_clickable {
   font-size: 48px;
@@ -222,15 +222,20 @@ a.absolute {
   font-size: 19px;
 }
 #small_header .left_options a {
-    margin-right: 21px;
+  margin-right: 21px;
 }
 #small_header img {
-    margin-top: -9px;
+  margin-top: -9px;
 }
 
 #first {
-  height: 820px;
+  height: 70vh;
   width: 100%;
+  background-image: url(../img/img0-0.png);
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+  margin-top: 30px;
 }
 #first .textContainer {
   position: absolute;
@@ -340,13 +345,13 @@ a.absolute {
   position: relative;
 }
 #fourth .section.border::before {
-    content: '';
-    display: inline-block;
-    height: 150px;
-    position: absolute;
-    width: 2px;
-    background: rgba(72, 118, 89, 0.52);
-    right: -1px;
+  content: '';
+  display: inline-block;
+  height: 150px;
+  position: absolute;
+  width: 2px;
+  background: rgba(72, 118, 89, 0.52);
+  right: -1px;
 }
 #fourth .section:last-child {
   border-right: none;
@@ -407,7 +412,7 @@ a.absolute {
   font-weight: 300;
   margin-bottom: 17px;
   cursor: pointer;
-  margin-left:; -3000px;
+  margin-left: -3000px;
 }
 #fifth .leftContainer span {
   display: inline-block;
@@ -548,23 +553,23 @@ a.absolute {
   border-bottom: 6px solid transparent;
 }
 ng-map .close {
-    direction: ltr;
-    text-align: center;
-    position: relative;
-    color: rgb(0, 0, 0);
-    font-family: Roboto, Arial, sans-serif;
-    -webkit-user-select: none;
-    font-size: 11px;
-    background-color: rgb(255, 255, 255);
-    padding: 8px;
-    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-    min-width: 40px;
-    position: absolute;
-    z-index: 99999;
-    right: 20px;
-    top: 20px;
-    border-radius: 2px;
-    cursor: pointer;
+  direction: ltr;
+  text-align: center;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-family: Roboto, Arial, sans-serif;
+  -webkit-user-select: none;
+  font-size: 11px;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  min-width: 40px;
+  position: absolute;
+  z-index: 99999;
+  right: 20px;
+  top: 20px;
+  border-radius: 2px;
+  cursor: pointer;
 }
 sixth-section ng-map {
   position: absolute;
@@ -676,10 +681,10 @@ sixth-section ng-map.open {
   padding: 2px 0 0 30px;
 }
 #eighth .title {
-    font-size: 19px;
-    line-height: 1.2;
-    font-weight: 100;
-    color: #7d7d7d;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 100;
+  color: #7d7d7d;
 }
 #eighth .time {
     font-size: 12px;
