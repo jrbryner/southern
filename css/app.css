@@ -3,6 +3,19 @@ body {
   font-family: Open Sans;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fada63;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fada63;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fada63;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fada63;
+}
+
 .hidden { visibility: hidden; }
 .overflow { overflow: hidden; }
 .relative { position: relative; }
@@ -127,7 +140,7 @@ a.absolute {
 }
 
 #header2 {
-  height: 143px;
+  height: 152px;
   background: #184f2c;
   padding: 0 40px;
   box-sizing: border-box;
@@ -148,12 +161,17 @@ a.absolute {
   font-family: Open Sans;
   font-weight: 700;
   font-size: 21px;
+  width: 368px;
+}
+#header2 div.gsc-clear-button {
+  display: none;
 }
 #header2 .navMenu {
   list-style: none;
   margin: 0;
   padding: 0;
   font-weight: bold;
+  text-align: right;
 }
 #header2 .navMenu li {
   display: inline-block;
@@ -170,22 +188,70 @@ a.absolute {
 #header2 .navMenu li:first-child {
   margin-left: 0px;
 }
-#header2 input {
-  height:50px;
-  margin-bottom:15px;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+#header2 .gsc-input input {
+  height: 59px;
+  margin: 0;
+  background: transparent !important;
+  border: none;
   width: 100%;
   padding: 5px 20px 0;
   font-family: Sorts Mill Goudy;
   font-style: italic;
   outline: none;
 }
+#header2 .gsc-search-box {
+  padding: 0;
+}
+#header2 input.gsc-search-button {
+  height: 59px;
+  width: 59px !important;
+  margin: 0;
+  background: #0c341a !important;
+  color: #0c341a !important;
+  width: 100%;
+  padding: 5px 20px 0;
+  font-family: Sorts Mill Goudy;
+  font-style: italic;
+  outline: none;
+  border: none;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+}
+#header2 .gsc-input {
+  padding-right: 0;
+}
+#header2 .gsc-clear-button {
+  display: none;
+}
+#header2 .gsc-search-box tr {
+  border: 1px solid #487659;
+}
+#header2 table.gsc-search-box {
+  margin-bottom: 16px;
+}
 #header2 .menu {
   color: #fff;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
   cursor: pointer;
+}
+#header2 td.gsc-search-button {
+  position: relative;
+}
+#header2 td.gsc-search-button::before {
+  content: "\f002";
+  display: block;
+  font-family: fontawesome;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 20px;
+  font-size: 20px;
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -15px;
+  pointer-events: none;
 }
 
 #small_header {
@@ -814,6 +880,11 @@ sixth-section ng-map.open {
   #second .overflow {
     width: 70%;
     margin: 0 auto 15px;
+  }
+  #second .content button {
+    padding: 17px 25px;
+    width: 290px;
+    display: block;
   }
   #second .request {
     margin-right: 0px !important;
