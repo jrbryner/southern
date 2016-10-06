@@ -756,6 +756,8 @@ sixth-section ng-map.open {
   background: #184f2c;
   color: #fff;
   padding: 11px;
+  font-size: 14px;
+  font-weight: 700;
 }
 #eighth .date {
   color: #333;
@@ -770,14 +772,15 @@ sixth-section ng-map.open {
   padding: 2px 0 0 30px;
 }
 #eighth .title {
-  font-size: 19px;
+  font-size: 24px;
   line-height: 1.2;
-  font-weight: 100;
+  font-weight: 300;
   color: #7d7d7d;
 }
 #eighth .time {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 6px;
+    font-weight: 600;
 }
 #eighth .diamond {
   right: 0;
