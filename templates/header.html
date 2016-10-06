@@ -1,7 +1,7 @@
 <div id="header">
   <div class="container vertical">
     <ul class="list">
-      <li ng-repeat="i in app.headerText"><i class="fa fa-user" ng-if="$last" aria-hidden="true"></i>{{i}}</li>
+      <li ng-repeat="i in app.headerText"><i class="fa fa-user" ng-if="$last" aria-hidden="true"></i><a ng-href="{{app.headerLink[$index]}}">{{i}}</a></li>
     </ul>
   </div>
 </div>
@@ -16,7 +16,7 @@
         <li><a href="http://www.southern.edu/visit">VISIT</a></li>
         <li><a href="http://www.southern.edu/degrees">DEGREES</a></li>
         <li class="menu" ng-click="toggleMenu();" ng-if="!isMenuOpen">MENU</li>
-        <li class="menu" ng-click="toggleMenu();" ng-if="isMenuOpen">CLOSE MENU</li>
+        <li class="menu" ng-click="toggleMenu();" ng-if="isMenuOpen">CLOSE</li>
       </ul>
     </div>
     <ul class="navMenu1 show-for-small-only">
@@ -28,7 +28,7 @@
 
 <!-- menu -->
 
-<div id="menu"  ng-class="{ activeMenu : isOpen != -1}" ng-if="isMenuOpen" ng-init="isOpen = -1" scroll-position="scroll" ng-class="{scrolling : scroll >= 183}">
+<div id="menu"  ng-class="{ activeMenu : isOpen != -1, scrolling : scroll >= 192}" ng-if="isMenuOpen" ng-init="isOpen = -1" scroll-position="scroll">
 
   <div class="menu_container">
     <div class="menu_clickable" ng-click="isOpen = 0;" ng-class="{ active : isOpen == 0 }">ACADEMICS</div>
