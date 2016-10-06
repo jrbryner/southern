@@ -582,7 +582,6 @@ a.absolute {
   cursor: pointer;
   display: block;
   text-align: right;
-  white-space: nowrap;
 }
 #sixth .major {
   color: #ced54a;
