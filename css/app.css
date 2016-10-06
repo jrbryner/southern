@@ -94,11 +94,10 @@ a.absolute {
   z-index: 9999;
   left: 0;
   width: 100%;
-  min-height: 820px;
+  height: 100vh;
   padding: 16px 0 20px 50px;
   box-sizing: border-box;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05), 0 1px 4px 0 rgba(0, 0, 0, .08), 0 3px 1px -2px rgba(0, 0, 0, .2);
-  top: 183px;
 }
 .menu_clickable {
   color: #FADA63;
@@ -121,10 +120,11 @@ a.absolute {
   color: #FADA63;
 }
 #menu.scrolling {
-  top: 84px;
+  top: 0;
   position: fixed;
-  overflow: auto;
-  max-height: calc(100vh - 84px);
+  overflow-y: auto;
+  height: 100vh;
+  padding-top: 120px;
 }
 .subtext {
   font-family: Sorts Mill Goudy;
@@ -145,7 +145,7 @@ a.absolute {
   padding: 0 40px;
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
+  z-index: 999999;
 }
 #header2 img {
     height: 93px;
@@ -893,6 +893,9 @@ sixth-section ng-map.open {
 
 @media screen and (max-width: 0em), screen and (max-width: 40em) {
   .border::before { width: 0 !important; }
+  .menu_content .column {
+    padding: 0;
+}
   #fourth .section { margin-bottom: 50px; }
   #header2 {
     height: 120px;
@@ -901,7 +904,8 @@ sixth-section ng-map.open {
     max-height: 70px;
   }
   #menu {
-    top: 120px;
+    top: 0px !important;
+    padding-top: 140px;
   }
   #menu .menu_clickable {
     font-size: 28px;
@@ -976,5 +980,8 @@ sixth-section ng-map.open {
   }
   #footer .center {
     text-align: center;
+  }
+  .hideIt {
+    display: none !important;
   }
 }
