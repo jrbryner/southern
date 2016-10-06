@@ -44,6 +44,10 @@ a.factory('app', function(){
     el.removeClass('hidden');
     el.addClass('animated fadeIn');
   }
+  app.hideElement = function(el){
+    el.removeClass('animated flipInY');
+    el.addClass('hidden');
+  }
 
   return app;
 
