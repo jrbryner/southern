@@ -2,11 +2,16 @@
   <div class="column row spacing">
     <div class="text">LEARN <span class="major">MORE</span></div>
   </div>
-  <div class="row small-up-2 medium-up-4">
+  <div class="column row small-up-2 medium-up-4">
     <div class="column learnHolder" ng-repeat="i in app.seventhSection">
       <div class="hidden container" when-visible="app.showElement">
         <img ng-attr-src="{{app.baseImgFolder}}{{i}}"/>
-        <div class="expand vertical" ng-if="app.seventhText[$index] != ''" style="background : {{app.seventhTextBG[$index]}}">{{app.seventhText[$index]}}</div>
+        <div class="expand vertical" ng-if="app.seventhText[$index] != ''" style="background : {{app.seventhTextBG[$index]}}">
+          {{app.seventhText[$index]}}
+          <div class="expandDesc" ng-if="$index == 0">
+            Don’t allow budgetary fears to keep you from learning more about the opportunity for a life-changing academic, social, and spiritual experience at Southern.
+          </div>
+        </div>
       </div>
     </div>
   </div>
