@@ -894,8 +894,17 @@ sixth-section ng-map.open {
 @media screen and (max-width: 0em), screen and (max-width: 40em) {
   .border::before { width: 0 !important; }
   #fourth .section { margin-bottom: 50px; }
+  #header2 {
+    height: 120px;
+  }
   #header2 img {
     max-height: 70px;
+  }
+  #menu {
+    top: 120px;
+  }
+  #menu .menu_clickable {
+    font-size: 28px;
   }
   #first .text { font-size: 52px !important; }
   #second .overflow {
