@@ -519,6 +519,7 @@ a.absolute {
   font-weight: 300;
   position: relative;
   text-align: center;
+  width: 100%;
 }
 #fifth .major {
   color: #ced54a;
@@ -530,7 +531,7 @@ a.absolute {
   text-align: left;
   display: inline-block;
   font-size: 24px;
-  padding: 22px 16% 0 22px;
+  padding: 22px 22px 0;
 }
 #fifth .arrowDown::after {
   content: '';
@@ -662,6 +663,7 @@ sixth-section ng-map.open {
 #seventh .container {
   margin-bottom: 20px;
   position: relative;
+  overflow: hidden;
 }
 #seventh .text {
   background: #fff;
@@ -700,17 +702,29 @@ sixth-section ng-map.open {
   text-align: center;
   height: 16.5%;
   transition: .2s all ease-in-out;
-  cursor: pointer;
   font-size: 20px;
 }
 #seventh .expandDesc {
   text-align: left;
   font-size: 14px;
   padding: 20px;
+  font-weight: normal;
+}
+#seventh .expandDesc a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#seventh .expandDesc div {
+  color: #333;
+  margin-top: 30px;
+  text-align: center;
 }
 #seventh .container:hover > .expand {
   height: 100%;
   padding-top: 20px;
+  font-weight: bold;
 }
 #seventh .container:hover > .expand::before {
   height: 0%;
