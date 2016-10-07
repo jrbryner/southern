@@ -7,12 +7,13 @@ a.factory('app', function(){
     baseImgFolder     : 'img/',
 
     headerText        : ['Future Students', 'Parents & Families', 'Alumni & Friends', 'Faculty & Staff', 'Curent Students', 'MyAccess'],
-    headerLink        : ['fdf', 'gfgff', 'gfg', 'gfgf', 'gfgfg', 'http://myaccess.southern.edu'],
+    headerLink        : ['/undergrad', '/connect/parents.html', '/connect/alumni.html', '/connect/faculty-staff.html', '/connect/currentstudents.html', 'https://myaccess.southern.edu'],
 
     firstSection      : ['img0-0.png'],
 
     secondSection     : ['img1-1.png', 'img1-2.png', 'img1-3.png'],
     secondSectionText : ['LEARN HERE', 'WORSHIP HERE', 'LIVE HERE'],
+    secondSectionLink : ['/undergrad/academics/academic-majors.html', 'http://www.southern.edu/undergrad/campus-life/spiritual-life.html', 'http://www.southern.edu/undergrad/campus-life/student-life.html'],
 
     thirdSection      : ['"Many are the plans in a person\'s heart, but it is the Lord\'s purpose that prevails"', 'Proverbs 19:21'],
 

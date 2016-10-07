@@ -10,7 +10,7 @@
     <div ng-repeat="i in app.secondSection" class="column hidden" when-visible="app.showElementUp">
       <div class="overflow">
         <img ng-src="{{app.baseImgFolder}}{{app.secondSection[$index]}}"/>
-        <div class="text vertical">{{app.secondSectionText[$index]}}</div>
+        <a class="text vertical" href="{{app.secondSectionLink[$index]}}">{{app.secondSectionText[$index]}}</a>
       </div>
     </div>
   </div>
