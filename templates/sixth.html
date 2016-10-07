@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <ng-map ng-class="{open : $ctrl.mapOpen}" scrollwheel="false" center="[34.676297, 9.301090]" zoom="2" height="100%" width="100%">
+  <ng-map ng-class="{open : $ctrl.mapOpen}" scrollwheel="false" center="[20.759059,-37.5339217]" zoom="3" height="100%" width="100%">
     <div class="close" ng-click="$ctrl.mapOpen = !1">Close Map</div>
     <marker ng-repeat="place in missionLocations" position="[{{place.Lat}}, {{place.Long}}]"></marker>
   </ng-map>
