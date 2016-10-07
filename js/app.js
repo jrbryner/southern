@@ -103,10 +103,28 @@ a.component('fifthSection', {
 
 a.component('sixthSection', {
   templateUrl: 'templates/sixth.html',
-  controller: function sixthSectionController($scope, app){
+  controller: function sixthSectionController($scope, app, NgMap){
     $scope.app = app;
     $scope.missionLocations = missionLocations.Locations;
     this.mapOpen = !1;
+
+    $scope.showInfosWindow = function (event, p, index) {
+        var infowindow = new google.maps.InfoWindow();
+
+        var center = new google.maps.LatLng(p[0] + 7,p[1]);
+        var word = missionLocations.Locations[index].Students == 1 || missionLocations.Locations[index].Students == 0 ? 'is' : 'are';
+        infowindow.setContent(
+            '<div>' + missionLocations.Locations[index].Students + ' ' + word + ' in ' + missionLocations.Locations[index].Location + '</div>');
+
+        infowindow.setPosition(center);
+        infowindow.open($scope.map);
+        console.log(infoWindow);
+     };
+
+    NgMap.getMap().then(function(map){
+      console.log("HI");
+      $scope.map = map;
+    });
   }
 });
 
