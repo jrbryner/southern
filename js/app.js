@@ -114,7 +114,8 @@ a.component('sixthSection', {
         var center = new google.maps.LatLng(p[0] + 7,p[1]);
         var word = missionLocations.Locations[index].Students == 1 || missionLocations.Locations[index].Students == 0 ? 'is' : 'are';
         infowindow.setContent(
-            '<div>' + missionLocations.Locations[index].Students + ' ' + word + ' in ' + missionLocations.Locations[index].Location + '</div>');
+          '<div>' + missionLocations.Locations[index].Students + ' ' + word + ' in ' + missionLocations.Locations[index].Location + '</div>'
+        );
 
         infowindow.setPosition(center);
         infowindow.open($scope.map);

@@ -41,7 +41,7 @@ a {
   image-rendering: pixelated;
 }
 
-img { transition: .2s all ease-in-out; }
+img { transition: .2s all ease-out; }
 .textCenter { text-align: center; }
 
 a.absolute {
@@ -386,7 +386,7 @@ a.absolute {
   font-family: Neue Helvetica Condensed;
   font-weight: bold;
   font-size: 24px;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms ease-out;
 }
   #second .lineContainer button:hover {
     color: #fff;
@@ -504,7 +504,7 @@ a.absolute {
 }
 #fifth .leftContainer a{
   position: relative;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms ease-out;
   left: 0;
 }
   #fifth .leftContainer a:hover {
@@ -600,7 +600,7 @@ a.absolute {
   cursor: pointer;
   display: block;
   text-align: right;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms ease-out;
 }
   #sixth .small:hover {
     transform: translateX(20px);
@@ -722,7 +722,7 @@ sixth-section ng-map.open {
   right: 0;
   text-align: center;
   height: 16.5%;
-  transition: .2s all ease-in-out;
+  transition: .2s all ease-out;
   font-size: 20px;
 }
 #seventh .expandDesc {
@@ -751,7 +751,7 @@ sixth-section ng-map.open {
   height: 0%;
 }
 #seventh .expand::before {
-  transition: .2s all ease-in-out;
+  transition: .2s all ease-out;
 }
 #eighth {
   padding: 0 0 160px;
@@ -820,7 +820,7 @@ sixth-section ng-map.open {
   color: #184F2C;
   font-weight: 700;
   font-size: 14px;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms ease-out;
 }
 #eighth .view-events:hover {
   transform: translateX(10px);
@@ -879,7 +879,7 @@ sixth-section ng-map.open {
   font-family: Neue Helvetica;
   margin-top: 20px;
   cursor: pointer;
-  transition: all 200ms ease-in-out;
+  transition: all 200ms ease-out;
 }
   #ninth .apply:hover {
     background-color: #184F2C;
