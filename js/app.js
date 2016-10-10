@@ -6,7 +6,7 @@ a.factory('app', function(){
 
     baseImgFolder     : 'img/',
 
-    headerText        : ['Future Students', 'Parents & Families', 'Alumni & Friends', 'Faculty & Staff', 'Curent Students', 'MyAccess'],
+    headerText        : ['Future Students', 'Parents & Families', 'Alumni & Friends', 'Faculty & Staff', 'Current Students', 'MyAccess'],
     headerLink        : ['/undergrad', '/connect/parents.html', '/connect/alumni.html', '/connect/faculty-staff.html', '/connect/currentstudents.html', 'https://myaccess.southern.edu'],
 
     firstSection      : ['img0-0.png'],
