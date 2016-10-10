@@ -15,6 +15,10 @@ body {
 :-moz-placeholder { /* Firefox 18- */
   color: #fada63;
 }
+svg:not(:root) {
+    overflow: hidden;
+    vertical-align: middle;
+}
 
 .hidden { visibility: hidden; }
 .overflow { overflow: hidden; }
@@ -921,6 +925,15 @@ sixth-section ng-map.open {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+#footer .social {
+  margin-top: 20px;
+}
+#footer .social i {
+  font-size: 31px;
+  color: #dadd96;
+  margin-right: 15px;
+  cursor: pointer;
 }
 #footer .menu li {
     color: rgb(236,212,108);

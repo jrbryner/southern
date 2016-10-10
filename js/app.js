@@ -176,16 +176,7 @@ a.directive('scrollPosition', function($window) {
   };
 });
 
-(function() {
- var cx = '004766769700957756237:fowol8rwkue';
- var gcse = document.createElement('script');
- gcse.type = 'text/javascript';
- gcse.async = true;
- gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(gcse, s);
-})();
-
 window.onload = function() {
+  alert("HI");
   $(".gsc-input input").attr('placeholder', 'Search');
 }
