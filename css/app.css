@@ -901,7 +901,7 @@ sixth-section ng-map.open {
 }
 
 #footer {
-  background: rgba(24, 79, 44, 0.90);
+/*  background: rgba(24, 79, 44, 0.90); */
   padding: 40px 0;
   position: relative;
 }
