@@ -930,7 +930,7 @@ sixth-section ng-map.open {
   margin-top: 20px;
 }
 #footer .social i {
-  font-size: 31px;
+  font-size: 24px;
   color: #dadd96;
   margin-right: 15px;
   cursor: pointer;
@@ -946,6 +946,27 @@ sixth-section ng-map.open {
 #footer .menu .column:nth-child(3) {
   border-right: none;
   margin-right: 0;
+}
+#footer .column.row.smallRow {
+    margin-top: 10px;
+}
+#footer .column.row.smallRow ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+#footer .column.row.smallRow li {
+    display: inline-block;
+    font-size: 12px;
+    color: #dadd96;
+    margin-right: 15px;
+}
+#footer .column.row.smallRow .copyright {
+    color: #9ABBA6;
+}
+#footer .column.small-12.medium-2.end {
+    margin-bottom: 10px !important;
 }
 
 @media screen and (min-width: 40em) and (max-width: 50em) {

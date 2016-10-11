@@ -1,3 +1,5 @@
+initGSE();
+
 var a = angular.module('Southern', ['angular-scroll-animate', 'ngFitText', 'ngMap', 'angularVideoBg']);
 
 a.factory('app', function(){
@@ -176,7 +178,24 @@ a.directive('scrollPosition', function($window) {
   };
 });
 
-window.onload = function() {
-  alert("HI");
-  $(".gsc-input input").attr('placeholder', 'Search');
+function initGSE() {
+   window.__gcse = {
+       parsetags: 'onload',
+       callback: function() {
+
+           $('input.gsc-input').attr('placeholder', 'Search');
+
+           $('td.gsc-search-button').on('mousedown', function() {
+               $(this).find('input').trigger('click');
+           });
+
+       }
+   }
+
+   var cx = '004766769700957756237:fowol8rwkue'; // Production
+   //var cx = '004766769700957756237:out5iv1xyfm'; // Test
+   var gcse = document.createElement('script'); gcse.type = 'text/javascript';
+   gcse.async = true;
+   gcse.src = 'https://www.google.com/cse/cse.js?cx=' + cx;
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
 }
