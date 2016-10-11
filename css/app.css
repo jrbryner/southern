@@ -1082,17 +1082,6 @@ sixth-section ng-map.open {
   #footer .menu .column {
     border-right : none;
   }
-  #footer .map ng-map {
-    position: relative;
-    display: block;
-    height: 300px !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 90%;
-    margin: 0 auto;
-  }
   #footer .center {
     text-align: center;
   }

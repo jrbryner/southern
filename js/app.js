@@ -158,8 +158,20 @@ a.component('ninthSection', {
 
 a.component('footer', {
   templateUrl: 'templates/footer.html',
-  controller: function FooterController($scope, app){
+  controller: function FooterController($scope, app, NgMap, $window){
+    var map;
     $scope.app = app;
+    NgMap.getMap().then(function(map){
+      google.maps.event.addListener(map, 'resize', function(){
+        var center = new google.maps.LatLng(map.center.lat(), map.center.lng())
+        console.log();
+        map.setCenter(center);
+      });
+      $(window).resize(function(){
+        google.maps.event.trigger(map, 'resize')
+      });
+    });
+
   }
 });
 
