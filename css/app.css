@@ -56,14 +56,6 @@ a.absolute {
   right: 0;
   cursor: pointer;
 }
-#footer ng-map {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 25%;
-  height: auto !important;
-  left: 71%;
-}
 
 #header {
   background: rgb(18,68,37);
@@ -909,7 +901,7 @@ sixth-section ng-map.open {
 }
 
 #footer {
-  background: #184f2c;
+  background: rgba(24, 79, 44, 0.90);
   padding: 40px 0;
   position: relative;
 }
@@ -967,6 +959,15 @@ sixth-section ng-map.open {
 }
 #footer .column.small-12.medium-2.end {
     margin-bottom: 10px !important;
+}
+#footer ng-map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto !important;
+  left: 0;
+  z-index: -1;
 }
 
 @media screen and (min-width: 40em) and (max-width: 50em) {
