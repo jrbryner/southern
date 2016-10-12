@@ -977,6 +977,12 @@ sixth-section ng-map.open {
 #footer .above a {
   pointer-events: all;
 }
+#footer .directionLink {
+    color: blue;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+}
 
 @media screen and (min-width: 40em) and (max-width: 50em) {
   #header2 .smallContainer, #small_header .left_options {
