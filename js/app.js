@@ -177,7 +177,7 @@ a.component('footer', {
       var center = new google.maps.LatLng(p[0] + .001,p[1]);
 
       infowindow.setContent(
-        '4881 Taylor Circle Collegedale, TN 37315 <br><a class="directionLink" href="https://www.google.com/maps/dir//4881+Taylor+Circle+Collegedale,+TN+37315/@35.050502,-85.0459625,13z">Get Directions</a>'
+        '4881 Taylor Circle Collegedale, TN 37315<a class="directionLink" target="_blank" href="https://www.google.com/maps/dir//4881+Taylor+Circle+Collegedale,+TN+37315/@35.050502,-85.0459625,13z">Get Directions</a>'
       );
 
       infowindow.setPosition(center);

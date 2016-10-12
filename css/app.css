@@ -145,9 +145,11 @@ a.absolute {
 }
 #header2 img,
 #header2 svg {
-    height: 93px;
-    display: inline-block;
-    vertical-align: middle;
+  height: 93px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
 }
 #header2 .container {
   float: right;
@@ -598,9 +600,9 @@ a.absolute {
   text-align: right;
   transition: all 200ms ease-out;
 }
-  #sixth .small:hover {
-    transform: translateX(20px);
-  }
+#sixth .small:hover {
+  transform: translateX(20px);
+}
 #sixth .major {
   color: #ced54a;
   font-weight: 500;
@@ -1090,6 +1092,10 @@ sixth-section ng-map.open {
   }
   #footer .center {
     text-align: center;
+  }
+  ng-map .close.open {
+    position: fixed;
+    top: 102px;
   }
   .hideIt {
     display: none !important;
