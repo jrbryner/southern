@@ -110,10 +110,10 @@ a.component('sixthSection', {
     $scope.missionLocations = missionLocations.Locations;
     this.mapOpen = !1;
 
-    $scope.showInfosWindow = function (event, p, index) {
+    $scope.showInfosWindow = function (event, lat, long, index) {
         var infowindow = new google.maps.InfoWindow();
 
-        var center = new google.maps.LatLng(p[0] + 7,p[1]);
+        var center = new google.maps.LatLng(lat + 7, long);
         var word = missionLocations.Locations[index].Students == 1 || missionLocations.Locations[index].Students == 0 ? 'is' : 'are';
         infowindow.setContent(
           '<div>' + missionLocations.Locations[index].Students + ' ' + word + ' in ' + missionLocations.Locations[index].Location + ' from ' + missionLocations.Locations[index].Department  + '</div>'
