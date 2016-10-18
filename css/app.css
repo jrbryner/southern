@@ -306,14 +306,13 @@ a.absolute {
   background-size: cover;
   background-position: center center; */
   min-height: 400px;
-  margin-top: 30px;
 }
 #first .textContainer {
   position: absolute;
   bottom: 8%;
 }
 #first .text {
-  background: #fff;
+  background: rgba(255,255,255,.9);
   font-size: 90px;
   font-size: 9vh;
   display: inline-block;
