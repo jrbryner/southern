@@ -294,6 +294,10 @@ a.absolute {
 #small_header img {
   margin-top: -9px;
 }
+#small_header svg.small_logo {
+  height: 72px;
+  margin-top: 16px;
+}
 
 #first {
   height: 70vh;
