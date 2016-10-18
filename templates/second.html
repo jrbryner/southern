@@ -8,10 +8,12 @@
   </div>
   <div class="row small-up-1 medium-up-3">
     <div ng-repeat="i in app.secondSection" class="column hidden" when-visible="app.showElementUp">
+      <a href="{{app.secondSectionLink[$index]}}">
       <div class="overflow">
         <img ng-src="{{app.baseImgFolder}}{{app.secondSection[$index]}}"/>
-        <a class="text vertical" href="{{app.secondSectionLink[$index]}}">{{app.secondSectionText[$index]}}</a>
+        <span class="text vertical" href="{{app.secondSectionLink[$index]}}">{{app.secondSectionText[$index]}}</span>
       </div>
+      </a>
     </div>
   </div>
 </div>
