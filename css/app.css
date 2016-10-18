@@ -819,6 +819,7 @@ sixth-section ng-map.open {
   font-weight: 700;
   font-size: 14px;
   transition: all 200ms ease-out;
+  margin-top: 20px;
 }
 #eighth .view-events:hover {
   transform: translateX(10px);
