@@ -138,7 +138,7 @@ a.absolute {
 #header2 {
   height: 152px;
   background: #184f2c;
-  padding: 0 40px;
+  padding: 0 25px;
   box-sizing: border-box;
   position: relative;
   z-index: 999999;
@@ -295,8 +295,10 @@ a.absolute {
   margin-top: -9px;
 }
 #small_header svg.small_logo {
-  height: 72px;
+  height: 66px;
   margin-top: 16px;
+  margin-left: -17px;
+  width: auto;
 }
 
 #first {
@@ -990,6 +992,39 @@ sixth-section ng-map.open {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 64.0625em) {
+  #header2 {
+    height: 115px;
+  }
+
+  #header2 img, #header2 svg {
+    height: 73px;
+    width: auto;
+  }
+
+  #header2 .gsc-input input {
+    height: 45px;
+  }
+
+  #header2 input.gsc-search-button {
+    height: 45px;
+    width: 45px !important;
+  }
+
+  #header2 td.gsc-search-button::before {
+    font-size: 17px;
+  }
+
+  #header2 .smallContainer {
+    font-size: 18px;
+    width: 331px;
+  }
+
+  #first {
+    height: 60vh;
+  }
+}
+
 @media screen and (min-width: 40em) and (max-width: 50em) {
   #header2 .smallContainer, #small_header .left_options {
     display: none;
@@ -1020,7 +1055,7 @@ sixth-section ng-map.open {
   #header2 img,
   #header2 svg {
     max-height: 70px;
-    margin-left: -50px;
+    margin-left: -32px;
   }
   #menu {
     top: 0px !important;
@@ -1036,7 +1071,7 @@ sixth-section ng-map.open {
   }
   #second .content button {
     padding: 17px 25px;
-    width: 290px;
+    width: 250px;
     display: block;
   }
   #second .request {
