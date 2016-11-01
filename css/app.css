@@ -912,6 +912,7 @@ sixth-section ng-map.open {
 /*  background: rgba(24, 79, 44, 0.90); */
   padding: 40px 0;
   position: relative;
+  background: #184f2c;
 }
 #footer .title {
   font-size: 22px;
