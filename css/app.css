@@ -1055,7 +1055,7 @@ sixth-section ng-map.open {
   #header2 img,
   #header2 svg {
     max-height: 70px;
-    margin-left: -32px;
+    margin-left: 0;
   }
   #menu {
     top: 0px !important;
